@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Images diagonal test</title>
+        
+        <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--import custom css files-->
+        <link rel="stylesheet" type="text/css" href="../css/brazadox-js-animations.css">
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/brazadox-js-animations.js"></script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="experimental-slider"></div>
+        <h1>Text and Image</h1>
+        <div id="experimental-slider-2"></div>
+        
+    </body>
+    
+        <script>
+            
+            var diagonalSlider = new DiagonalCutTwinSlider("experimental-slider");
+            console.log(diagonalSlider.left_slider_contents);
+            console.log(diagonalSlider.right_slider_contents);
+            
+            diagonalSlider.add_contents_to_left_slider(["https://www.teslarati.com/wp-content/uploads/2019/11/tesla-model-x-1.jpg", "https://www.teslarati.com/wp-content/uploads/2019/07/tesla-model-s-raven-2.jpg"]);
+            diagonalSlider.add_contents_to_right_slider(["https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2019/6/24/9fc02fb7600b4889aecbfe9ea854757f_18.jpg","https://images.ctfassets.net/cnu0m8re1exe/7pdgIWwcuBBN5X9lfH417o/dbb049e15b6722d3d0eb16d1c1abf776/Screenshot_2020-05-30_at_12.39.33_PM.png?w=650&h=433&fit=fill",
+            "https://images.barrons.com/im-190806?width=1260&size=1.5"]);
+            diagonalSlider.init();
+            
+            var diagonalSlider2 = new DiagonalCutTwinSlider("experimental-slider-2");
+            diagonalSlider2.right_slider_content_type = "text";
+            diagonalSlider2.add_contents_to_left_slider(["https://www.teslarati.com/wp-content/uploads/2019/07/tesla-model-s-raven-2.jpg", "https://mk0spaceflightnoa02a.kinstacdn.com/wp-content/uploads/2019/07/48380511427_eeafd03bd7_k.jpg"]);
+            diagonalSlider2.add_contents_to_right_slider(["Autopilot advanced safety and convenience features are designed to assist you with the most burdensome parts of driving.", "Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket."]);
+            diagonalSlider2.init();
+        </script>
+</html>
