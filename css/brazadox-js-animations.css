@@ -1,5 +1,5 @@
+
 .left-slider{
-    height:40rem;
     width: 55%;
     float: left;
     position: absolute;
@@ -14,7 +14,6 @@
 }
 
 .right-slider{
-    height: 40rem;
     width: 55%;
     float: right;
     position: relative;
@@ -152,11 +151,7 @@
     display: none;
     }
      
-    .left-slider{
-        height:40rem;
-    }
-
-    .right-slider{
-        height: 40rem;
+    .left-slider, .right-slider{
+        height: 30rem;
     }
  }
